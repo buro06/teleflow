@@ -2,6 +2,6 @@
     "user": "admin",
     "secret": "teleflow",
     "port": 3000,
-    "updateIntervalSecs": 10,
+    "updateIntervalSecs": 5,
     "scrollMethod": "teleflow"
 }
