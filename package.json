@@ -1,0 +1,26 @@
+{
+    "name": "teleflow",
+    "version": "1.0.0",
+    "description": "Open-Source Teleprompter Solution for Professionals",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "startDev": "nodemon index.js --ignore serverInfo.json"
+    },
+    "author": "Burrough Osborne",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/buro06/teleflow"
+    },
+    "dependencies": {
+      "express": "^4.21.1",
+      "fs": "^0.0.1-security",
+      "path": "^0.12.7",
+      "socket.io": "^4.8.0"
+    },
+    "devDependencies": {
+      "nodemon": "^3.1.7"
+    }
+  }
+  

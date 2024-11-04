@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleFlow Control by Burrough Osborne</title>
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h1>TeleFlow Control</h1>
+    <div class="teleprompter" id="teleprompter">
+        <span id="connectionDot"></span>
+        <div class="cueArrow" id="cueArrow"></div>
+        <div class="prompter" id="prompter">
+            <pre id="promptText">
+    wait...
+            </pre>
+        </div>
+        <div class="credit">
+            <button class="restartBtn" id="restartBtn">Restart</button><br>
+            <label id="scrollMultiplierLabel" for="scrollMultiplier">Scroll Speed: </label>
+            <input type="range" id="scrollMultiplier" name="quantity" min="1" max="50" value="5"
+                placeholder="Scroll Multiplier">
+            <p><a target="_blank" href="https://github.com/buro06/teleflow">TeleFlow Control</a> <span
+                    id="version"></span> by
+                <a target="_blank" href="https://burrough.osbo.net">Burrough Osborne</a>
+            </p>
+        </div>
+    </div>
+</body>
+<script type="module" src="Control.js"></script>
+
+</html>

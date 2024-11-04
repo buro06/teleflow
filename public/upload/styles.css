@@ -1,0 +1,64 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main content container */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Text styling for credits */
+.credit {
+    color: gray;
+}
+
+/* Form layout styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for textarea input */
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}

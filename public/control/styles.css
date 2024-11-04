@@ -1,0 +1,119 @@
+/* Basic styling for full screen layout */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Title styling */
+h1 {
+    position: fixed;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+}
+
+/* Link styling */
+a {
+    color: #6464ff;
+}
+
+/* Connection dot indicator */
+#connectionDot {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: #cd3232;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Teleprompter container */
+.teleprompter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Scrollable text area */
+.prompter {
+    width: 90%;
+    height: 100%;
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding: 20px;
+    text-align: left;
+    line-height: 0.8;
+    font-size: 12vw; /* Large font size for readability from a distance */
+    font-size: calc(var(--vw, 1vw) * 12);
+    text-transform: uppercase;
+    pointer-events: auto;
+    scrollbar-width: auto;
+    scrollbar-color: grey black;
+    transform-origin: center;
+}
+
+/* Cue triangle indicator */
+.cueArrow {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 5vw solid transparent;
+    border-bottom: 5vw solid transparent;
+    border-left: 5vw solid white; /* Triangle points left to right */
+    transform: translateY(-50%);
+}
+
+/* Credits */
+.credit {
+    position: fixed;
+    text-align: right;
+    right: 0;
+    bottom: 0;
+    padding-right: 10px;
+    color: gray;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Restart button styling */
+.restartBtn {
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.restartBtn:hover {
+    background: rgb(255, 65, 65);
+    color: white;
+}
+
+/* Scroll multiplier input styling */
+#scrollMultiplier {
+    width: 50%;
+    font-size: 16pt;
+}
+
+/* Preformatted text styling */
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

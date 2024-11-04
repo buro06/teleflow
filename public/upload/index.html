@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleFlow - Script Submission</title>
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>TeleFlow Script Submission</h1>
+        <form id="scriptForm">
+            <textarea id="scriptInput" rows="15" placeholder="Paste your script here..."></textarea>
+            <button type="button" id="submit">Submit Script</button>
+        </form>
+        <div class="credit">
+            <p><a target="_blank" href="https://github.com/buro06/teleflow">TeleFlow</a> <span id="version"></span> by
+                <a target="_blank" href="https://burrough.osbo.net">Burrough Osborne</a>
+            </p>
+        </div>
+    </div>
+</body>
+<script type="module" src="Upload.js"></script>
+
+</html>

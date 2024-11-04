@@ -1,0 +1,114 @@
+/* Basic styling to fill the screen */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#connectionDot {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: #cd3232;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Teleprompter container */
+.teleprompter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cue triangle styling */
+.cueArrow {
+    position: absolute;
+    /* Move to the right side */
+    left: 0%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 5vw solid transparent;
+    border-bottom: 5vw solid transparent;
+    border-left: 5vw solid white;
+    /* Triangle now points left to right */
+    transform: translateY(-50%);
+}
+
+/* Scrollable text styling */
+.prompter {
+    width: 90%;
+    height: 100%;
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding: 20px;
+    text-align: left;
+    line-height: 0.8;
+    font-size: 12vw;
+    font-size: calc(var(--vw, 1vw) * 12); /* Large font size for readability from a distance */
+    text-transform: uppercase;
+    scrollbar-width: none;
+    transform-origin: center;
+}
+/* Hide scrollbar fix for safari */
+.prompter::-webkit-scrollbar {
+    display:none;
+}
+
+.credit {
+    position: fixed;
+    text-align: right;
+    right: 0;
+    bottom: 0;
+    padding-right: 10px;
+    color: gray;
+    text-shadow: 2px 2px 2px black;
+}
+
+.debug {
+    position: fixed;
+    text-align: left;
+    left: 0;
+    padding-left: 10px;
+    bottom: 0;
+    color: gray;
+}
+
+.flipToggle {
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.flipToggle:hover {
+    background: rgb(65, 65, 255);
+    color: white;
+}
+
+a {
+    color: #6464ff;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
