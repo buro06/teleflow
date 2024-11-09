@@ -26,7 +26,7 @@ setServerInfo()
 io.on('connection', (socket) => {
     console.log('Client Connected: ' + socket.id);
     socket.on('controlPosition', (data, callback) => {
-        console.log('Received position ' + data.controlScrollTop +'/'+data.controlScrollMax + ' from controller')
+        console.log('Received position ' + data.controlScrollTop + '/' + data.controlScrollMax + ' from controller')
         callback(updateClientPosition(data));
     });
     socket.on('upload', (data, callback) => {
@@ -77,7 +77,10 @@ function updateClientPosition(scroll) {
 }
 
 function writeScript(data) {
-    fs.writeFile('./public/script.txt', data, err => {
+    //Fix line break on URLS;
+    var script = data.replace(/([/.])(?=\S)/g, '$1\u200B');
+
+    fs.writeFile('./public/script.txt', script, err => {
         if (err) {
             console.error(err);
             return err;

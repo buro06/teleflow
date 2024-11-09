@@ -1,6 +1,6 @@
 {
     "name": "teleflow",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Open-Source Teleprompter Solution for Professionals",
     "main": "index.js",
     "scripts": {

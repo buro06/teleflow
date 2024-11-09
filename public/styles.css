@@ -51,19 +51,22 @@ html {
 .prompter {
     width: 90%;
     height: 100%;
-    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-y: auto;
+    /* Allow vertical scrolling */
     padding: 20px;
     text-align: left;
     line-height: 0.9;
     font-size: 12vw;
-    font-size: calc(var(--vw, 1vw) * 12); /* Large font size for readability from a distance */
+    font-size: calc(var(--vw, 1vw) * 12);
+    /* Large font size for readability from a distance */
     text-transform: uppercase;
     scrollbar-width: none;
     transform-origin: center;
 }
+
 /* Hide scrollbar fix for safari */
 .prompter::-webkit-scrollbar {
-    display:none;
+    display: none;
 }
 
 .credit {
@@ -110,4 +113,8 @@ a {
 
 pre {
     white-space: pre-wrap;
+    /* Allows wrapping on spaces */
+    overflow-wrap: normal;
+    /* Prevents breaking long words */
+    word-break: keep-all;
 }
