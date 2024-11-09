@@ -1,5 +1,5 @@
 const socket = io({
-    ackTimeout: 100,
+    ackTimeout: 1000,
     retries: 10
 });
 //Cross browser load config from server
@@ -97,6 +97,11 @@ function checkScrollMethod() {
 }
 
 function handleControlPosition(e) {
+    var focusedElement = document.activeElement;
+    if(focusedElement.id === "scrollMultiplier") {
+        console.log('Focused on scrolling element. Blurring focus.');
+        focusedElement.blur();
+    }
     var offset;
     var scrollMultiplierValue = scrollMutliplier.value;
     if (e) {

@@ -1,5 +1,5 @@
 const socket = io({
-    ackTimeout: 100,
+    ackTimeout: 1000,
     retries: 10
 });
 
@@ -69,6 +69,12 @@ const requestWakeLock = async () => {
 
 // Request a screen wake lock…
 await requestWakeLock();
+
+//FIX: Some browsers (ex: iOS) will only release a wakelock after the display is tapped.
+//      Add event listener for screen tap
+document.addEventListener('click', () => {     
+    requestWakeLock()
+})
 
 //update script from server on load and continue on interval
 updateScript();

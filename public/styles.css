@@ -42,7 +42,7 @@ html {
     height: 0;
     border-top: 5vw solid transparent;
     border-bottom: 5vw solid transparent;
-    border-left: 5vw solid white;
+    border-left: 5vw solid green;
     /* Triangle now points left to right */
     transform: translateY(-50%);
 }
@@ -54,7 +54,7 @@ html {
     overflow-y: auto; /* Allow vertical scrolling */
     padding: 20px;
     text-align: left;
-    line-height: 0.8;
+    line-height: 0.9;
     font-size: 12vw;
     font-size: calc(var(--vw, 1vw) * 12); /* Large font size for readability from a distance */
     text-transform: uppercase;
@@ -110,5 +110,4 @@ a {
 
 pre {
     white-space: pre-wrap;
-    word-wrap: break-word;
 }

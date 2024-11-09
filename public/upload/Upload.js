@@ -1,5 +1,5 @@
 const socket = io({
-    ackTimeout: 100,
+    ackTimeout: 1000,
     retries: 10
 });
 import serverInfo from '/serverInfo.json' with { type: "json" };
