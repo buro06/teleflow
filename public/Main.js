@@ -139,7 +139,7 @@ function flipScreen() {
     prompter.style.webkitTransform = 'scaleX(-1)'
     cueArrow.style.left = '95%';
     cueArrow.style.borderLeft = '5vw';
-    cueArrow.style.borderRight = '5vw solid white';
+    cueArrow.style.borderRight = '5vw solid green';
 }
 function unFlipScreen() {
     console.log("Flipping screen to false");
@@ -147,7 +147,7 @@ function unFlipScreen() {
     isFlipped = false;
     prompter.style.webkitTransform = 'scaleX(1)';
     cueArrow.style.left = '0%';
-    cueArrow.style.borderLeft = '5vw solid white';
+    cueArrow.style.borderLeft = '5vw solid green';
     cueArrow.style.borderRight = '5vw';
 }
 
