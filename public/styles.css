@@ -57,7 +57,7 @@ html {
     text-align: left;
     line-height: 0.9;
     font-size: 12vw;
-    font-size: calc(var(--vw, 1vw) * 12);
+    font-size: calc(var(--vw, 1vw) * 11);
     /* Large font size for readability from a distance */
     text-transform: uppercase;
     scrollbar-width: none;
@@ -113,8 +113,6 @@ a {
 
 pre {
     white-space: pre-wrap;
-    /* Allows wrapping on spaces */
-    overflow-wrap: normal;
-    /* Prevents breaking long words */
-    word-break: keep-all;
+    word-break: break-all;
+    
 }

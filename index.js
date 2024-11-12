@@ -79,7 +79,7 @@ function updateClientPosition(scroll) {
 function writeScript(data) {
     //Fix line break on URLS;
     //var script = data.replace(/([/.])(?=\S)/g, '$1\u200B');
-    var script = data.replace(/([/.])(?=\S)/g, '$1 ');
+    var script = data;
 
     fs.writeFile('./public/script.txt', script, err => {
         if (err) {
